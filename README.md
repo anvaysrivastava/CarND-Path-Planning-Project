@@ -1,6 +1,8 @@
 # CarND-Path-Planning-Project
 Self-Driving Car Engineer Nanodegree Program
    
+The car was able to drive for 4.69 Miles withing the speed limit. There were no warnings. I have uploaded a snapshot of run on youtube. https://youtu.be/xtObKum3lEo
+
 ## Write up
 
 As taught by the course material and walkthrough. I broke the problem of car driving in three sub sections.
@@ -45,5 +47,7 @@ The method used is as follows.
 * Crudely layout the checkpoints to be followed by car. This is done in `main.cpp` from line 298 to 349.
 * Generate a spline curve using above crude points and get a smooth curve. Line 352 to 353 in `main.cpp`
 * Generate fine points and push it to msgJson. `main.cpp` line 368 to 394.
+
+Basic spline with points ahead at 30m 60m and 90m ensured that there is no jerk and I did not have to impement a PID controlled.
 
 *** 
